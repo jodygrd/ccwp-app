@@ -2,7 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const DEMO_API_URL = 'http://demo.wp-api.org/wp-json/wp/v2/posts'
+
 class App extends Component {
+  
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      posts: []
+    }
+    
+  }
   render() {
     return (
       <div className="App">
